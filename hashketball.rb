@@ -127,6 +127,14 @@ def game_hash
   }
 end
  
+def team team_name
+  case team_name
+  when game_hash[:home][:team_name]
+    game_hash[:home]
+    when game_hash[:away][:team_name]
+      game_hash[:away]
+    end  
+end
 
 def num_points_scored (player_name)
  all_players= game_hash[:home][:players].concat (game_hash[:away][:players])
@@ -150,20 +158,17 @@ end
 
 
 def team_colors (team_name)
-  case team_name
-  when game_hash[:home][:team_name]
-       game_hash[:home][:colors]
-  when game_hash[:away][:team_name]
-       game_hash[:away][:colors]
-      end 
-    end
+  team(team_name)[:colors]
+end
+  
+
+    
     
 def team_names
   [game_hash[:home][:team_name],game_hash[:away][:team_name]]
 end
 
-def player_numbers (team_name)
-  
+
 
 
   
