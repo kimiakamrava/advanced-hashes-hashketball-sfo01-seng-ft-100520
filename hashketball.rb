@@ -170,26 +170,6 @@ end
 
 
 
-def player_stats(player_name)
-player_stats =[]
-game_hash.each do |location,team_data|
-  team_data[:playes].each do |player|
-    if player[:player_name] == player_name
-      player.each do |stats|
-      player_stats << stats
-      
-    end
-  end
-end
-end
-player_stats
-end
-
-
-
-  
-  
-  
   
   
   
