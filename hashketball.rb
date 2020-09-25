@@ -162,15 +162,7 @@ def team_names
   [game_hash[:home][:team_name],game_hash[:away][:team_name]]
 end
 
-def team_name
-  when game_hash[:home][:team_name]
-    game_hash[:home]
-  when game_hash[:away][:team_name]]
-    game_hash[:away]
-  end 
- end
- 
- 
+
   
   
   
