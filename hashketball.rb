@@ -179,6 +179,9 @@ game_hash.each do |location,team_data|
       return player_stats
     end
   end
+end
+end
+end
 
 
 
