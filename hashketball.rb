@@ -170,7 +170,7 @@ end
 
 
 
-de
+def player_stats
 
 
   
