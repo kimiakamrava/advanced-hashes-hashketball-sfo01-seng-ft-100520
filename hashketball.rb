@@ -138,12 +138,12 @@ def num_points_scored (player_name)
   end
 end
 
-def num_points_scored (player_name)
+def shoe_size (player_name)
  all_players= game_hash[:home][:players].concat (game_hash[:away][:players])
 
   all_players.each do |player|
     if player_name == player[:player_name]
-      return player[:points]
+      return player[:shoe]
     end
   end
 end
