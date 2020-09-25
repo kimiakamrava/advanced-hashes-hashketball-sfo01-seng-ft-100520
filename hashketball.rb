@@ -128,7 +128,7 @@ def game_hash
 end
  
 
-def num_points_scored
+def num_points_scored (player_name)
  all_players= game_hash[:home][:players].concat (game_hash[:away][:players])
   all_players[player_name][:points]
 end
