@@ -177,6 +177,10 @@ game_hash.each do |location,team_data|
     if player[:player_name] == player_name
       player.each do |stats|
       return player_stats
+    end
+  end
+end
+
 
   
   
