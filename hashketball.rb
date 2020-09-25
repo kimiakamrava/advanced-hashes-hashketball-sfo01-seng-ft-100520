@@ -155,7 +155,11 @@ def team_colors (team_name)
        game_hash[:home][:colors]
   when game_hash[:away][:team_name]
        game_hash[:away][:colors]
-    end 
+      end 
+    end
+  end 
+  
+  
   
 
 
