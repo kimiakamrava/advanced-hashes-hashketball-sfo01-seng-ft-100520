@@ -136,7 +136,11 @@ def all_players
 def num_points_scored (player_name)
  all_players[1][:points]
 end
-
+game_hash[:home][:players].each do |player_hash|
+  
+  player_hash[:shoe]
+  
+end
 
 
 
