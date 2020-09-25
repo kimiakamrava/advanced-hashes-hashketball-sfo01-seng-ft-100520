@@ -167,7 +167,11 @@ def team_name
     game_hash[:home]
   when game_hash[:away][:team_name]]
     game_hash[:away]
-    
+  end 
+ end
+ 
+ def player_numbers (team_name)
+   team(team_name)[:players].map
   
   
   
