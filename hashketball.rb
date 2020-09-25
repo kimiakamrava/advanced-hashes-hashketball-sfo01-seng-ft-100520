@@ -163,7 +163,10 @@ def team_names
 end
 
 def team_name
-  
+  when game_hash[:home][:team_name]
+    game_hash[:home]
+  when game_hash[:away][:team_name]]
+    
   
   
   
