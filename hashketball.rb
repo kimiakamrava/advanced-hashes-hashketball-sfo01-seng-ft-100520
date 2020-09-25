@@ -127,23 +127,17 @@ def game_hash
   }
 end
  
+binding.pry
 
-def num_points_scored(player_name)
-  
-  game_hash.each do |location, team_data|
-    #are you ABSOLUTELY SURE what 'location' and 'team data' are? use binding.pry to find out!
-    
-    team_data.each do |attribute, data|
-      #are you ABSOLUTELY SURE what 'attribute' and 'team data' are? use binding.pry to find out!
-      
- 
-      #what is 'data' at each loop throughout .each block? when will the following line of code work and when will it break?
-      data.each do |data_item|
-        
-      end
-    end
+def all_players
+  game_hash[:home][:players].concat (game_hash[:away][:players])
   end
-end
+
+ 
+def num_points_scored (player_name)
+ all_players.each do |player_hash|
+   player_hash[:points]
+  end
 
 
 
