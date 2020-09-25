@@ -127,17 +127,8 @@ def game_hash
   }
 end
  
-binding.pry
 
-def all_players
-  game_hash[:home][:players].concat (game_hash[:away][:players])
-  end
 
- 
-def num_points_scored (player_name)
- all_players.each do |player_hash|
-   player_hash[:points]
-  end
 
 
 
