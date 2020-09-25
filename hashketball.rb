@@ -157,7 +157,6 @@ def team_colors (team_name)
        game_hash[:away][:colors]
       end 
     end
-  end 
   
   
   
