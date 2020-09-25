@@ -168,7 +168,7 @@ def team_names
   [game_hash[:home][:team_name],game_hash[:away][:team_name]]
 end
 
-binding.pry
+
 
 def player_numbers (team_name)
   
